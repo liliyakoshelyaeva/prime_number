@@ -17,24 +17,7 @@ namespace prime_number
         }
         public static void Main()
         {
-            Console.Write("Введите целое число: ");
-
-            if (int.TryParse(Console.ReadLine(), out int number))
-            {
-                if (IsPrime(number))
-                {
-                    Console.WriteLine($"{number} - простое число.");
-                }
-                else
-                {
-                    Console.WriteLine($"{number} - не является простым числом.");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Некорректный ввод.");
-            }
-            Console.ReadKey();
+            IsPrime(7);
         }
     }
 
